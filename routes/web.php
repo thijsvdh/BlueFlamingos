@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/import', 'ProductController@importProducts')->name('import');
+Route::get('/getProducts', 'ProductController@getProducts')->name('getProducts');
